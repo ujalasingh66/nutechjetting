@@ -1,0 +1,275 @@
+body {width: auto!important; 
+  overflow-x: hidden!important
+}
+.con{
+  padding: 0 !important;
+  margin: 0 !important;
+  /* background-color: #ffffff !important; */
+  height: 100% !important;
+  width: 100% !important;
+  /* #4A4843 */
+}
+.dropbtn {
+    background-color: #ff6309;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 39px !important;
+   
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   
+    overflow: auto;
+
+    right: 8px !important;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  .dropdown-content a:hover {background-color: #4d4a4a;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3f3f41;}
+
+.noteoncard {
+ 
+  min-height: 220px !important;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center !important; 
+
+  max-width: 500px;
+  height: fit-content !important;
+  /* padding: 15px; */
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+border-radius: 40px !important;
+  backdrop-filter: blur(15px);
+}
+
+/* animation for application buttons */
+
+
+:root {
+  --glow-color: hsl(29, 98%, 53%);
+}
+.glowingbtn {
+  position: relative;
+  color: rgb(32, 29, 29);
+  cursor: pointer;
+  padding: 0.35em 1em;
+  border: 0.15em solid var(--glow-color);
+  border-radius: 5em;
+  background: none;
+  perspective: 4em;
+  /* font-family: "Raleway", sans-serif; */
+  font-size: 20px !important;
+  font-weight: 900;
+  margin-left: 35px !important;
+
+}
+
+
+.faulty-letter {
+  opacity: 0.5;
+  animation: faulty-flicker 2s linear infinite;
+}
+
+
+
+.glowingbtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+ 
+  
+  transition: opacity 100ms linear;
+  border-radius: 50px !important;
+}
+
+.glowingbtn:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: none;
+  animation: none;
+  
+}
+
+.glowingbtn:hover .glowing-txt {
+  animation: none;
+}
+
+.glowingbtn:hover .faulty-letter {
+  animation: none;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.glowingbtn:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+
+.glowingbtn:hover:after {
+  opacity: 1;
+}
+
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  8% {
+    opacity: 0.1;
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+  72% {
+    opacity: 0.2;
+  }
+
+  77% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .glowingbtn{
+    font-size: 1em;
+  }
+}
+.bbn{
+  right: 1.0rem !important;
+  bottom: 1.0rem !important;
+  margin-bottom: 0 !important;
+  border-radius: 60% !important;
+  height: 60px;
+  width: 60px;
+  z-index: 9999;
+}
+.noteoncard1{
+background-image: url("https://i.pinimg.com/236x/1f/dd/82/1fdd82e64fa9ebcc50900caa8a920b64.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position:top;
+}
+
+.noteoncard2{
+  background-image: url("../assets/aa.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  }
+
+  .noteoncard3{
+    background-image: url("../assets/bb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    }

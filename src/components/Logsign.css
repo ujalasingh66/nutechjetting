@@ -1,0 +1,29 @@
+.con3{
+background-image: url("https://i.pinimg.com/564x/76/8b/bf/768bbf0feb1f4513eeab016e4bba070c.jpg");
+background-color: #1a1818;
+background-repeat: no-repeat;
+background-size: cover;
+background-position:top;
+padding: 13px;
+border-radius: 40px;
+
+}
+.con4{
+    /* background-image: url("https://i.pinimg.com/564x/76/8b/bf/768bbf0feb1f4513eeab016e4bba070c.jpg"); */
+background-color: #4A4843;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+  height: 100vh;
+    
+    }
+
+.logbtn{
+    font-weight: 750 !important;
+    border-radius: 50px !important;
+    font-size: xx-large;
+    
+}
+.logbtn1{
+    
+}

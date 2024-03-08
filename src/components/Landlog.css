@@ -1,0 +1,27 @@
+.divmain{
+    height:13.13rem !important;
+    /* border-radius: 0 0 var(--br-21xl) var(--br-21xl) !important; */
+    border-top-left-radius: 15% !important;
+    border-top-right-radius: 15% !important;
+    margin-bottom: 0 !important;
+    background: linear-gradient( rgb(243, 96, 11) 10%, rgb(243, 96, 11) 30%) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+
+  }
+.divform{
+z-index: 9999;
+}
+
+@media (max-width: 768px) {
+ 
+
+  .columsecond {
+    height: 200px !important;
+    margin-right: 85px !important;
+    margin-top: 180px !important;
+   }
+ 
+}
